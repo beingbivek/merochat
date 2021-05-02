@@ -27,17 +27,29 @@ class _LoginScreenState extends State<LoginScreen> {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
-              Hero(
-                tag: 'logo',
-                child: Container(
-                  height: 200.0,
-                  child: Image.asset('images/logo.png'),
+              Flexible(
+                child: Hero(
+                  tag: 'logo',
+                  child: Container(
+                    height: 200.0,
+                    child: Image.asset('images/logo.png'),
+                  ),
                 ),
               ),
               SizedBox(
                 height: 48.0,
               ),
-              TextField(
+              TextFormField(
+                validator: (value) {
+                  bool emailValid = RegExp(
+                          r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+")
+                      .hasMatch(value);
+                  if (!emailValid) {
+                    return 'this is not a valid email';
+                  } else {
+                    return null;
+                  }
+                },
                 keyboardType: TextInputType.emailAddress,
                 textAlign: TextAlign.center,
                 onChanged: (value) {
@@ -49,7 +61,7 @@ class _LoginScreenState extends State<LoginScreen> {
               SizedBox(
                 height: 8.0,
               ),
-              TextField(
+              TextFormField(
                 obscureText: true,
                 textAlign: TextAlign.center,
                 onChanged: (value) {
@@ -71,7 +83,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     final user = await _auth.signInWithEmailAndPassword(
                         email: email, password: password);
                     if (user != null) {
-                      Navigator.pushNamed(context, ChatScreen.id);
+                      Navigator.pushReplacementNamed(context, ChatScreen.id);
                     }
                     setState(() {
                       showSpinner = false;

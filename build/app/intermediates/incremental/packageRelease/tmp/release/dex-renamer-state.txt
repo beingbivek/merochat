@@ -1,0 +1,4 @@
+#Sun May 02 22:26:43 NPT 2021
+base.0=E\:\\Work\\Projects\\FlutterPj\\flash-chat-flutter\\build\\app\\intermediates\\transforms\\r8\\release\\0\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

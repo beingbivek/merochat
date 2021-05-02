@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">696246757632-rvs3c5cdqsvjj4fn75v81lqfpk3f8ffd.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">696246757632</string>
+    <string name="google_api_key" translatable="false">AIzaSyA-uSKX-Cv9Jm4aQFR1kJOiTj4drBsVE7I</string>
+    <string name="google_app_id" translatable="false">1:696246757632:android:c5eb9e01bd04e14b3b6be5</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyA-uSKX-Cv9Jm4aQFR1kJOiTj4drBsVE7I</string>
+    <string name="google_storage_bucket" translatable="false">mero-chat-77c65.appspot.com</string>
+    <string name="project_id" translatable="false">mero-chat-77c65</string>
+</resources>
