@@ -1,7 +1,10 @@
-#Sun May 02 10:04:14 NPT 2021
-base.0=E\:\\Work\\Projects\\FlutterPj\\flash-chat-flutter\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+#Sun May 02 14:02:08 NPT 2021
+path.2=classes3.dex
 path.1=classes2.dex
-renamed.1=classes2.dex
 path.0=classes.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
 renamed.0=classes.dex
+base.2=E\:\\Work\\Projects\\FlutterPj\\flash-chat-flutter\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes3.dex
 base.1=E\:\\Work\\Projects\\FlutterPj\\flash-chat-flutter\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes2.dex
+base.0=E\:\\Work\\Projects\\FlutterPj\\flash-chat-flutter\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex

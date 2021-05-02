@@ -39,10 +39,11 @@ class _WelcomeScreenState extends State<WelcomeScreen>
     // Important for changing the animation in screen
     controller.addListener(() {
       setState(() {});
-      print(animation.value);
+      // print(animation.value);
     });
   }
 
+//Important to dispose the controller
   @override
   void dispose() {
     controller.dispose();
